@@ -197,3 +197,9 @@ a {
         transform: translateX(0);
     }
 }
+/* Keep chat anchored to the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
