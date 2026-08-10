@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    text-shadow: 0 0 1px #000, 0 0 2px #000;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: {font_size};
+    line-height: 1.5em;
+    color: {text_color};
+}
+
+/* Original Streamlabs-style message animation */
+#log > div {
+    animation: fadeInRight .3s ease forwards,
+               fadeOut 0.5s ease {message_hide_delay} forwards;
+    -webkit-animation: fadeInRight .3s ease forwards,
+                       fadeOut 0.5s ease {message_hide_delay} forwards;
+}
+
+/* Keep the original colon behavior */
+.colon {
+    display: none;
+}
+
+/* Original bottom-up positioning */
+#log {
+    display: table;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 10px;
+}
+
+/*
+ * Social Stream Ninja source/platform icon fix.
+ * SSN uses an image for the source type (Twitch/YouTube/etc.).
+ * These rules ONLY keep that icon visible; they do not alter
+ * the original animation, positioning, or transparency.
+ */
+#log > div img,
+#log > div svg,
+.hl-name img,
+.hl-name svg {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Do not let the platform icon collapse */
+.hl-name img {
+    display: inline-block !important;
+}
+
+/* Preserve SSN's native source indicator spacing */
+.hl-name {
+    align-items: center;
+}
+
+/* Original animation definitions */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
