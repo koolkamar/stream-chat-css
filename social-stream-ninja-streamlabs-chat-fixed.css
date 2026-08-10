@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+*{box-sizing:border-box;}
+
+html,body{
+    height:100%;
+    overflow:hidden;
+}
+
+body{
+    text-shadow:0 0 1px #000,0 0 2px #000;
+    background:transparent;
+    font-family:'Roboto',sans-serif;
+    font-weight:700;
+    color:#ffffff;
+}
+
+/* Keep chat at bottom */
+#log{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:0 10px 10px;
+}
+
+/* IMPORTANT: Keep Social Stream Ninja platform icons visible */
+img, svg,
+[class*="source"],
+[class*="platform"],
+[class*="icon"]{
+    display:inline-block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+}
+
+/* Only hide the colon, not icons */
+.colon{
+    display:none;
+}
