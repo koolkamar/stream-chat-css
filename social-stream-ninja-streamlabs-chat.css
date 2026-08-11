@@ -72,6 +72,7 @@ html, body {
     box-shadow: none !important;
     border: none !important;
     animation: fadeInRight 0.3s ease forwards;
+    transform: translateX(8px);
 }
 
 .highlight-chat.odd {
@@ -136,8 +137,6 @@ display: none !important;
 
 .hl-source-type {
     display: inline-block !important;
-    position: relative !important;
-    left: 8px !important;
 }
 
 /* ---------- Hide timestamps ---------- */
