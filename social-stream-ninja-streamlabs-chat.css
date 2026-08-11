@@ -130,9 +130,12 @@ html, body {
 
 /* ---------- Hide source icons ---------- */
 
-.hl-source-type,
 .source-name {
-    display: none !important;
+display: none !important;
+}
+
+.hl-source-type {
+display: inline-block !important;
 }
 
 /* ---------- Hide timestamps ---------- */
