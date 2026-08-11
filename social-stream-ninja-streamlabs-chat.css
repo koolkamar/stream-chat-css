@@ -1,178 +1,178 @@
+```css
 /* =========================================================
-   STREAMLABS-STYLE CHAT FOR SOCIAL STREAM NINJA
-   ========================================================= */
+STREAMLABS-STYLE CHAT FOR SOCIAL STREAM NINJA
+========================================================= */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
 /* ---------- Global ---------- */
 
 html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden !important;
-    background: transparent !important;
-    font-family: 'Roboto', sans-serif !important;
-    font-weight: 700 !important;
-    color: #ffffff !important;
-    text-shadow:
-        0 0 1px #000,
-        0 0 2px #000;
-    -webkit-font-smoothing: antialiased;
+width: 100%;
+height: 100%;
+margin: 0 !important;
+padding: 0 !important;
+overflow: hidden !important;
+background: transparent !important;
+font-family: 'Roboto', sans-serif !important;
+font-weight: 700 !important;
+color: #ffffff !important;
+text-shadow:
+0 0 1px #000,
+0 0 2px #000;
+-webkit-font-smoothing: antialiased;
 }
 
 /* ---------- SSN Variables ---------- */
 
 :root {
-    --font-family: 'Roboto', sans-serif;
+--font-family: 'Roboto', sans-serif;
 
-    --comment-font-size: 16px;
-    --author-font-size: 16px;
+--comment-font-size: 16px;
+--author-font-size: 16px;
 
-    --message-line-height: 24px;
+--message-line-height: 24px;
 
-    --message-font-weight: 700;
-    --name-font-weight: 700;
+--message-font-weight: 700;
+--name-font-weight: 700;
 
-    --font-color: #ffffff;
-    --font-color-name: #ffffff;
+--font-color: #ffffff;
+--font-color-name: #ffffff;
 
-    --highlight-base: transparent !important;
-    --highlight-base2: transparent !important;
+--highlight-base: transparent !important;
+--highlight-base2: transparent !important;
 
-    --highlight-compact: transparent !important;
-    --highlight-compact2: transparent !important;
+--highlight-compact: transparent !important;
+--highlight-compact2: transparent !important;
 
-    --padding-rows: 0px;
+--padding-rows: 0px;
 
-    --text-stroke-width: 0px;
-    --text-glow: none;
+--text-stroke-width: 0px;
+--text-glow: none;
 
-    --text-shadow:
-        0 0 1px #000,
-        0 0 2px #000;
+--text-shadow:
+    0 0 1px #000,
+    0 0 2px #000;
 }
 
 /* ---------- Chat rows ---------- */
 
 #output {
-    margin: 0 !important;
-    padding: 0 10px 10px 20px !important;
-    width: 100% !important;
-    background: transparent !important;
+margin: 0 !important;
+padding: 0 10px 10px 20px !important;
+width: 100% !important;
+background: transparent !important;
 }
 
 .highlight-chat {
-    background: transparent !important;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    margin: 0 !important;
-    min-height: 24px !important;
-    box-shadow: none !important;
-    border: none !important;
-    animation: fadeInRight 0.3s ease forwards;
-    transform: translateX(8px);
+background: transparent !important;
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin: 0 !important;
+min-height: 24px !important;
+box-shadow: none !important;
+border: none !important;
+animation: fadeInRight 0.3s ease forwards;
 }
 
 .highlight-chat.odd {
-    background: transparent !important;
+background: transparent !important;
 }
 
 /* ---------- Username ---------- */
 
 .hl-name {
-    font-family: 'Roboto', sans-serif !important;
-    font-size: 16px !important;
-    font-weight: 700 !important;
-    margin: 0 5px 0 0 !important;
-    min-width: unset !important;
-    max-width: none !important;
-    color: var(--font-color-name) !important;
-    text-shadow:
-        0 0 1px #000,
-        0 0 2px #000;
+font-family: 'Roboto', sans-serif !important;
+font-size: 16px !important;
+font-weight: 700 !important;
+margin: 0 5px 0 0 !important;
+min-width: unset !important;
+max-width: none !important;
+color: var(--font-color-name) !important;
+text-shadow:
+0 0 1px #000,
+0 0 2px #000;
 }
 
 /* ---------- Message ---------- */
 
 .hl-message {
-    font-family: 'Roboto', sans-serif !important;
-    font-size: 16px !important;
-    font-weight: 700 !important;
-    line-height: 24px !important;
-    margin: 0 !important;
-    color: #ffffff !important;
-    text-shadow:
-        0 0 1px #000,
-        0 0 2px #000;
+font-family: 'Roboto', sans-serif !important;
+font-size: 16px !important;
+font-weight: 700 !important;
+line-height: 24px !important;
+margin: 0 !important;
+color: #ffffff !important;
+text-shadow:
+0 0 1px #000,
+0 0 2px #000;
 }
 
 /* ---------- Badges ---------- */
 
 .hl-badges {
-    margin-left: 0 !important;
-    margin-right: 3px !important;
+margin-left: 0 !important;
+margin-right: 3px !important;
 }
 
 .hl-badge {
-    height: 20px !important;
-    max-height: 20px !important;
-    width: auto !important;
-    margin-right: 2px !important;
-    vertical-align: middle !important;
+height: 20px !important;
+max-height: 20px !important;
+width: auto !important;
+margin-right: 2px !important;
+vertical-align: middle !important;
 }
 
 /* ---------- Hide avatars ---------- */
 
 .hl-profile-pic {
-    display: none !important;
+display: none !important;
 }
 
-/* ---------- Hide source icons ---------- */
+/* ---------- Platform source icon ---------- */
 
 .source-name {
 display: none !important;
 }
 
 .hl-source-type {
-    display: inline-block !important;
+display: inline-block !important;
 }
 
 /* ---------- Hide timestamps ---------- */
 
 .time-arrived {
-    display: none !important;
+display: none !important;
 }
 
 /* ---------- Remove bubbles ---------- */
 
 .bubble {
-    background: transparent !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
+background: transparent !important;
+border-radius: 0 !important;
+box-shadow: none !important;
+padding: 0 !important;
+margin: 0 !important;
 }
 
 /* ---------- Remove hover effect ---------- */
 
 .highlight-chat:hover {
-    box-shadow: none !important;
+box-shadow: none !important;
 }
 
 /* ---------- Make links look like normal chat ---------- */
 
 a {
-    color: inherit !important;
-    text-decoration: none !important;
+color: inherit !important;
+text-decoration: none !important;
 }
 
 /* ---------- Emotes ---------- */
 
 .hl-message img,
 .hl-message svg {
-    vertical-align: middle !important;
+vertical-align: middle !important;
 }
 
 /* ---------- Prevent weird SSN backgrounds ---------- */
@@ -184,26 +184,29 @@ a {
 .highlight-chat.member,
 .highlight-chat.firsttime,
 .highlight-chat.dono-highlight {
-    background: transparent !important;
-    box-shadow: none !important;
+background: transparent !important;
+box-shadow: none !important;
 }
 
 /* ---------- Streamlabs-style entrance animation ---------- */
 
 @keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(20px);
-    }
+from {
+opacity: 0;
+transform: translateX(20px);
+}
 
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+to {
+opacity: 1;
+transform: translateX(0);
 }
-/* Keep chat anchored to the bottom */
+}
+
+/* ---------- Keep chat anchored to bottom ---------- */
+
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
 }
+```
