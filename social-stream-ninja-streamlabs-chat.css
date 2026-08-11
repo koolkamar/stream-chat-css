@@ -135,7 +135,9 @@ display: none !important;
 }
 
 .hl-source-type {
-display: inline-block !important;
+    display: inline-block !important;
+    position: relative !important;
+    left: 8px !important;
 }
 
 /* ---------- Hide timestamps ---------- */
